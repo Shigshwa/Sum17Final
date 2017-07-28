@@ -43,6 +43,8 @@ System Requirements:
 
 So long as you run the program with all of the files in the repository, then the program will run on any OS.
 
+Run the program by compiling with "g++ -std=c++11 main.cpp FaceMagazine.cpp -o test"
+
 
 Issues/Bugs:
 
