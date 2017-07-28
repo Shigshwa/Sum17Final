@@ -31,11 +31,11 @@ Dependencies:
 
 This application uses the following dependencies
 
-vector
-string
-iostream
-stdlib
-fstream
+vector,
+string,
+iostream,
+stdlib,
+fstream,
 time
 
 
