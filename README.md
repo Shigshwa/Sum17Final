@@ -20,7 +20,7 @@ Pressing 1 will allow you to check the latest post that a user has posted. If th
 
 Pressing 2 will allow you to post a status. Enter anything, and it will be logged into your profile.
 
-Pressing 3 will allow you to view a person's profile, and their posts. In addition, you can also use the image viewer to view a person's images.
+Pressing 3 will allow you to view a person's profile, and their posts. In addition, you can also use the image viewer to view a person's images. You can also view your own profile and the things you type in. Just type "you" as the person.
 
 Pressing 4 will allow you to manage your friends list.
 
