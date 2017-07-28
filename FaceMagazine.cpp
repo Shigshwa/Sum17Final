@@ -8,6 +8,7 @@
 
 using namespace std;
 
+//The constructor will build the graph of users from the text file.
 FaceMagazine::FaceMagazine(string username)
 {
     string finalusername=username+".txt";
@@ -63,11 +64,13 @@ FaceMagazine::~FaceMagazine()
     //dtor
 }
 
+//Getter function for the node that represents the user.
 user* FaceMagazine::retrieveInfo(){
 
 return you;
 }
 
+//Checks whether the specified user if your friend. Checks if the graph nodes are linked or not.
 bool FaceMagazine::isFriends(user* checkUser){
 
     for (int i=0; i<checkUser->friends.size();i++){
@@ -83,6 +86,7 @@ bool FaceMagazine::isFriends(user* checkUser){
 return 0;
 }
 
+//Displays the statuses stored in the node.
 void FaceMagazine::displayStatuses(user* target){
 
     for (int i=0;i<target->statuses.size();i++){
@@ -93,12 +97,14 @@ void FaceMagazine::displayStatuses(user* target){
 
 }
 
+//Stores the status into the node.
 void FaceMagazine::addStatus(user* user, string in){
 
 user->statuses.push_back(in);
 
 }
 
+//Returns the pointer to the specified node.
 user* FaceMagazine::findUser(string name, bool &found){
 
     for (int i=0; i<users.size();i++){
@@ -115,6 +121,7 @@ found=0;
 return NULL;
 }
 
+//An alternative function to the above function.
 user* FaceMagazine::setUser(string name){
 
     for (int i=0; i<users.size();i++){
@@ -129,6 +136,7 @@ user* FaceMagazine::setUser(string name){
 return NULL;
 }
 
+//Adds a node to the graph.
 void FaceMagazine::addUser(string name){
 
     user *newUser=new user;
@@ -140,6 +148,7 @@ void FaceMagazine::addUser(string name){
 
 }
 
+//Adds an edge between two nodes in the graph.
 void FaceMagazine::addConnection(user* v1, user* v2){
 
     v1->friends.push_back(v2);
@@ -147,12 +156,14 @@ void FaceMagazine::addConnection(user* v1, user* v2){
 
 }
 
+//Simulates a posted status.
 void FaceMagazine::postStatus(string status){
 
     cout<<"Status has been posted!"<<endl;
 
 }
 
+//Displays the main menu.
 void FaceMagazine::displayMainMenu(){
 
     cout<<"-----------------"<<endl<<"~FaceMagazine~"<<endl;
@@ -163,6 +174,7 @@ void FaceMagazine::displayMainMenu(){
 
 }
 
+//returns a phrase from the statuses text file, based on the randomly generated number input.
 string FaceMagazine::displayStatus(int in){
 
     fstream read("status.txt");
@@ -179,6 +191,7 @@ string FaceMagazine::displayStatus(int in){
 return status;
 }
 
+//Function that locates a user, and if found, displays the most recent status posted by the user.
 void FaceMagazine::checkStatus(string inpName, string& resultingStatus){
 
     bool found=0;
@@ -211,6 +224,7 @@ void FaceMagazine::checkStatus(string inpName, string& resultingStatus){
 
 }
 
+//Function to initialize a unique linked list gallery for each user.
 image* FaceMagazine::galleryCreator(){
 
     image *head=new image;
@@ -257,6 +271,7 @@ image* FaceMagazine::galleryCreator(){
 return head;
 }
 
+//The function that runs through the linked list and displays the images in the list.
 void FaceMagazine::imageViewer(user* user){
 
     image *current=user->imageHead;

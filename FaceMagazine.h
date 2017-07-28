@@ -5,6 +5,7 @@
 #ifndef FACEMAGAZINE_H
 #define FACEMAGAZINE_H
 
+//The struct for the linked list.
 struct image{
 
 std::string imageName;
@@ -14,6 +15,7 @@ image* prev;
 
 };
 
+//The struct for a node in the graph.
 struct user{
 
 std::string name;

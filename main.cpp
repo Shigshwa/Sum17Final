@@ -7,6 +7,7 @@ using namespace std;
 int main()
 {
 
+//Ask for the username, which is simply a way to specify the text file.
 
     string username;
 
