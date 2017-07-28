@@ -158,7 +158,7 @@ void FaceMagazine::displayMainMenu(){
     cout<<"-----------------"<<endl<<"~FaceMagazine~"<<endl;
     cout<<endl;
 
-    cout<<"1. Check Status"<<endl<<"2. Post Status"<<endl<<"3. Look at Profile"<<endl<<"4. Friends Manager"<<endl<<"5. Logout"<<endl;
+    cout<<"1. Check Status"<<endl<<"2. Post Status"<<endl<<"3. Look at Profile"<<endl<<"4. Logout"<<endl;
 
 
 }

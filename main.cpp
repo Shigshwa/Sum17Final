@@ -29,7 +29,7 @@ int main()
     string name;
     bool found=0;
 
-    while (option!=5){
+    while (option!=4){
 
         mainProgram.displayMainMenu();
 
@@ -134,13 +134,10 @@ int main()
 
         }
 
-        if (option==4){
-
-
-
-        }
 
     }
+
+    cout<<endl<<"You have logged out!"<<endl;
 
     return 0;
 }
