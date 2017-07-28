@@ -46,11 +46,22 @@ int main()
 
             if(found==1){
 
+                if (mainProgram.isFriends(currentUser)){
+
                     string status;
 
                     mainProgram.checkStatus(name,status);
 
                     mainProgram.addStatus(currentUser,status);
+
+                }
+
+                else {
+
+                    cout<<"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+                cout<<currentUser->name<<" is not your friend! Unable to view statuses!"<<endl;
+
+                }
 
 
             }

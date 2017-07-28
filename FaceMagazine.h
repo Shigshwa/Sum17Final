@@ -39,6 +39,7 @@ class FaceMagazine
         void imageViewer(user*);
         void addStatus(user*, std::string);
         void displayStatuses(user*);
+        bool isFriends(user*);
         user* retrieveInfo();
         user* setUser(std::string);
         user* findUser(std::string,bool&);

@@ -68,6 +68,21 @@ user* FaceMagazine::retrieveInfo(){
 return you;
 }
 
+bool FaceMagazine::isFriends(user* checkUser){
+
+    for (int i=0; i<checkUser->friends.size();i++){
+
+        if (checkUser->friends[i]->name==you->name){
+
+            return 1;
+
+        }
+
+    }
+
+return 0;
+}
+
 void FaceMagazine::displayStatuses(user* target){
 
     for (int i=0;i<target->statuses.size();i++){
