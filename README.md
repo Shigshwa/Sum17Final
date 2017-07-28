@@ -36,6 +36,8 @@ stdlib,
 fstream,
 time
 
+These dependencies are all standard, so no further installation is needed.
+
 
 System Requirements:
 
